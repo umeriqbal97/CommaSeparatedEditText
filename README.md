@@ -1,28 +1,28 @@
-Add this in project level gradle.
+Add this in project level gradle.<br>
 allprojects {
 <br>
-	repositories {
-			...
-			maven { url 'https://jitpack.io' }
-	}
-}
+	repositories {<br>
+			...<br>
+			maven { url 'https://jitpack.io' }<br>
+	}<br>
+}<br>
+<br><br>
+Add this in app level gradle.  <br>
+dependencies {<br>
+	        implementation 'com.github.umeriqbal97:CommaSeparatedEditText:1.0.0'<br>
+}<br>
+<br><br>
+For xml use following:<br><br>
 
-Add this in app level gradle.  
-dependencies {
-	        implementation 'com.github.umeriqbal97:CommaSeparatedEditText:1.0.0'
-}
-
-For xml use following:
-
-<com.fauji.commaseparated.widget.CommaSeparatedEditText
-        android:id="@+id/commaSeparatedEditText"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:isSeparateByCommas="true"
-        app:layout_constraintTop_toTopOf="parent"
-        app:noOfDecimals="2" />
-	
-For java use following:
-
-commaSeparatedEditText.getTextWithCommas()
-commaSeparatedEditText.getTextWithoutCommas()
+<com.fauji.commaseparated.widget.CommaSeparatedEditText<br>
+        android:id="@+id/commaSeparatedEditText"<br>
+        android:layout_width="match_parent"<br>
+        android:layout_height="wrap_content"<br>
+        app:isSeparateByCommas="true"<br>
+        app:layout_constraintTop_toTopOf="parent"<br>
+        app:noOfDecimals="2" /><br>
+	<br><br>
+For java use following:<br>
+<br>
+commaSeparatedEditText.getTextWithCommas()<br>
+commaSeparatedEditText.getTextWithoutCommas()<br>
