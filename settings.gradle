@@ -1,0 +1,3 @@
+include ':commaseparated'
+include ':app'
+rootProject.name = "CommaSparatedEditTextExample"
