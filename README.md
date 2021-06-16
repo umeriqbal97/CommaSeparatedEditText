@@ -9,7 +9,7 @@ allprojects {
 <br><br>
 Add this in app level gradle.  <br>
 dependencies {<br>
-	        implementation 'com.github.umeriqbal97:CommaSeparatedEditText:1.0.0'<br>
+	        implementation 'com.github.umeriqbal97:CommaSeparatedEditText:1.0.5'<br>
 }<br>
 <br><br>
 For xml use following:<br><br>
