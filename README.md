@@ -1,5 +1,6 @@
 Add this in project level gradle.
 allprojects {
+<br>
 	repositories {
 			...
 			maven { url 'https://jitpack.io' }
