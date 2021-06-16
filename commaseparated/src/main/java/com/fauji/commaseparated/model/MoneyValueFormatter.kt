@@ -5,7 +5,7 @@ import android.text.Spanned
 import android.text.method.DigitsKeyListener
 import com.fauji.commaseparated.utils.getDecimalFormattedString
 
-class MoneyValueFormatter(sign: Boolean, decimal: Boolean, digits: Int) :
+open class MoneyValueFormatter(sign: Boolean, decimal: Boolean, digits: Int) :
     DigitsKeyListener(sign, decimal) {
     private var digits: Int = 0
 

@@ -12,7 +12,7 @@ import com.fauji.commaseparated.model.MoneyValueFormatter
 import com.fauji.commaseparated.utils.getDecimalFormattedString
 import com.google.android.material.textfield.TextInputEditText
 
-class CommaSeparatedEditText constructor(context: Context,attributeSet: AttributeSet):
+open class CommaSeparatedEditText constructor(context: Context,attributeSet: AttributeSet):
     TextInputEditText(context,attributeSet), TextWatcher {
 
     private var attr=attributeSet
