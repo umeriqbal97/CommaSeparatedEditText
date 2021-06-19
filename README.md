@@ -30,9 +30,9 @@ allprojects {
 XML Usage
 ---------
 
-There are two attributes are added:
-	• isSeparateByCommas
-	• noOfDecimals
+There are two attributes are added:<br>
+	• isSeparateByCommas<br>
+	• noOfDecimals<br>
 
 ```xml
   <com.fauji.commaseparated.widget.CommaSeparatedEditText
