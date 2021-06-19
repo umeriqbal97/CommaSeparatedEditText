@@ -1,28 +1,54 @@
-Add this in project level gradle.<br>
-allprojects {
-<br>
-	repositories {<br>
-			...<br>
-			maven { url 'https://jitpack.io' }<br>
-	}<br>
-}<br>
-<br><br>
-Add this in app level gradle.  <br>
-dependencies {<br>
-	        implementation 'com.github.umeriqbal97:CommaSeparatedEditText:1.0.5'<br>
-}<br>
-<br><br>
-For xml use following:<br><br>
+Comma Separated EditText
+========================
 
-<com.fauji.commaseparated.widget.CommaSeparatedEditText<br>
-        android:id="@+id/commaSeparatedEditText"<br>
-        android:layout_width="match_parent"<br>
-        android:layout_height="wrap_content"<br>
-        app:isSeparateByCommas="true"<br>
-        app:layout_constraintTop_toTopOf="parent"<br>
-        app:noOfDecimals="2" /><br>
-	<br><br>
-For java use following:<br>
-<br>
-commaSeparatedEditText.getTextWithCommas()<br>
-commaSeparatedEditText.getTextWithoutCommas()<br>
+A faster way to achieve comma separated amount in edittext. This library is 100% build on kotlin.
+
+![CommaSeparatedEdittext](https://github.com/umeriqbal97/CommaSeparatedEditText/blob/master/screenshot.gif)
+
+This library extends the TextInputEditText class to achieve the above desired output.
+
+Gradle
+------
+```
+dependencies {
+    ...
+    implementation 'com.github.umeriqbal97:CommaSeparatedEditText:1.0.5'
+}
+```
+
+Project Gradle
+--------------
+```
+allprojects {
+	repositories {
+		...
+		maven { url 'https://jitpack.io' }
+	}
+}
+```
+
+XML Usage
+---------
+
+There are two attributes are added:<br>
+	• isSeparateByCommas<br>
+	• noOfDecimals<br>
+
+```xml
+  <com.fauji.commaseparated.widget.CommaSeparatedEditText
+        android:id="@+id/commaSeparatedEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:isSeparateByCommas="true"
+        app:noOfDecimals="2" />
+```
+
+Java Usage
+----------
+
+Use the below functions to get your desird text from edittext.
+
+```
+commaSeparatedEditText.getTextWithCommas()
+commaSeparatedEditText.getTextWithoutCommas()
+```
